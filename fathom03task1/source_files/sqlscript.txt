@@ -1,0 +1,6 @@
+CREATE TABLE `jokes` (
+  `id` int(11) NOT NULL,
+  `type` text NOT NULL,
+  `setup` text NOT NULL,
+  `punchline` text NOT NULL
+)

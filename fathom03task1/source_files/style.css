@@ -1,0 +1,76 @@
+body {
+  color: white;
+  background-color: black;
+  font-family: Orbitron;
+}
+
+@font-face {
+  font-family: Orbitron;
+  src: url(../images_and_fonts/Orbitron-VariableFont_wght.ttf);
+}
+
+@keyframes title{
+  from { width: 0px;}
+  to {width: 425px;}
+}
+
+@keyframes type {
+  from { width: 0px;}
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+.theTitle {
+ padding-left: 30%;
+ text-align: center;
+ white-space: nowrap;
+ overflow: hidden;
+ animation: title 2s linear 0s infinite alternate;
+}
+
+
+.structure {
+  width: 100%;
+  margin:auto;
+  position: relative;  /*We don't want the button to affect the layout */
+  text-align: center;
+}
+
+.structure .btn {
+  position: absolute;
+  top: 81.5%;
+  left: 40%;
+  width: 30px;
+  height: 27px;
+  background: url(../images_and_fonts/button.jpg);
+  cursor: pointer;
+}
+
+.jokecontainer {
+  position: absolute;
+  top: 35%;
+  margin-left: 40%;
+  margin-right: 40%;
+}
+
+
+.interiorimg {
+  animation: shake 0.5s;
+  animation-iteration-count: 4;
+}
+
+.hide {
+  display: none;
+}
